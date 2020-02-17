@@ -1,0 +1,85 @@
+body,h3 {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.app-title {
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+    border-bottom: 1px solid #666;
+}
+
+.todo {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.todo-add-form {
+    display: flex;
+    position: relative;
+}
+
+.todo-add-title,.todo-list-title {
+    margin: 40px 0 20px 0;
+}
+
+.todo-add-input {
+    padding: 15px 40px 15px 15px;
+    border: 1px solid lightgrey;
+    width: 80%;
+    margin-right: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.todo-app-input-clear {
+    border: none;
+    background-color: white;
+    font-size: 16px;
+    position: absolute;
+    top: 15px;
+    bottom: 0;
+    right: 22%;
+    height: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.todo-add-btn {
+    border-radius: 4px;
+    padding: 15px 5px;
+    border: 1px solid teal;
+    width: 20%;
+    background-color: teal;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.todo-list-item {
+    font-size: 16px;
+    padding: 15px 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid lightgrey;
+    display: flex;
+}
+
+.todo-list-item-name-marked {
+    text-decoration: line-through;
+}
+
+.todo-list-item-name {
+    flex: 1;
+    cursor: pointer;
+}
+
+.todo-list-item-delete {
+    padding: 0 10px;
+    cursor: pointer;
+}

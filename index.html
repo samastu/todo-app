@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <header>
+        <h3 class="app-title">Todo App</h3>
+    </header>
+
+    <main class="todo">
+        <section class="todo-add-section">
+            <h3 class="todo-add-title">Add Todo</h3>
+            <div class="todo-add-form">
+                <input type="text" class="todo-add-input" id="todo-add-input" placeholder="Enter Todo">
+                <button id="todo-add-input-clear" class="todo-app-input-clear">x</button>
+                <button class="todo-add-btn" id="todo-add-btn">Add</button>
+            </div>
+        </section>
+
+        <section class="todo-list-section">
+            <h3 class="todo-list-title">Todo List</h3>
+            <div id="todo-list">
+            </div>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
