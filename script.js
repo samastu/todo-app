@@ -3,6 +3,8 @@ var todoList = document.getElementById("todo-list");
 var todoAddInput = document.getElementById("todo-add-input");
 var todoAddInputClear = document.getElementById("todo-add-input-clear");
 var keyUpEvent = new Event("keyup");
+var clickEvent = new Event("click");
+var ENTER_KEY = "Enter";
 
 addTodoBtn.addEventListener("click", function () {
     var todoListItemNameText = todoAddInput.value;
@@ -23,6 +25,9 @@ addTodoBtn.addEventListener("click", function () {
 todoAddInput.addEventListener("keyup", function (e) {
     todoAddInputClear.style.display = e.target.value ? "block" : "none";
     
+    if (e.key === ENTER_KEY) {
+        addTodoBtn.dispatchEvent(clickEvent);
+    }
 
 });
 
